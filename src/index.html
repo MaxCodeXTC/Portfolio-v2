@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
-    favic
+   
 </head>
 <body>
     <header>
         <nav class="nav-menu max-width-limit">
-            <img class="header-logo" src="images/logo.png" alt="">
+            <a href="#"><img class="header-logo" src="images/logo.png" alt="DS Logo"></a>
 
             <ul class="nav-list">
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <div class="marker"></div>
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Skills</a></li>
+                <li class="nav-item"><a href="#">Projects</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -105,13 +106,186 @@
 
     <!-- Portfolio section -->
 
+    <div class="portfolio">
+        <div class="max-width-limit">
 
+            <h2 class="project-heading">A Few Personal Projects</h2>
 
+            <div class="container projects">
+                <div class="project-card">
+                    <h3>Success By Design</h3>
+                    <div class="project-image success-by-design">
+                        <div class="card-overlay">
+                            <div class="overlay-text" >
+                                
+                                <h4>Success By Design</h4>
+                             
+                                <p>
+                                    Created with <span>HTML</span>, <span>CSS</span>, and <span>JS</span> with use of <span>GULP</span> and <span>CSS
+                                    processors</span> to aid development
+                                </p>
 
+                                <div class="project-icons" >
+                                    <a href="https://github.com/Sumner-David/SuccessByDesign"><img src="./images/contact-images/gitHub-white.svg"
+                                            alt="Github Icon"></a>
+
+                                    <a href="./projects/SuccessByDesign/index.html"><img src="./images/link-icon.svg" alt="Link Icon"></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Huddle Landing Page</h3>
+                    <div class="project-image huddle">
+                       <div class="card-overlay">
+                           <div class="overlay-text">
+
+                               <h4>Huddle</h4>
+
+                               <p>
+                                  Created using <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, and <span>responsive
+                                  SVGs</span>
+                               </p>
+
+                               <div class="project-icons">
+                                   <a href="https://github.com/Sumner-David/Huddle-Landing-Page"><img src="./images/contact-images/gitHub-white.svg"
+                                           alt="Github Icon"></a>
+
+                                   <a href="./projects/huddle-landing-page/index.html"><img src="./images/link-icon.svg" alt="Link Icon"></a>
+                               </div>
+
+                           </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Javascript Styled Login</h3>
+                    <div class="project-image fancy-login">
+                        <div class="card-overlay">
+                            <div class="overlay-text">
+
+                                <h4>A Fancy Login</h4>
+
+                                <p>
+                                    Play with <span>Conditional JavaScript</span> and <span>CSS</span> to make pleasant login animations
+                                </p>
+
+                                <div class="project-icons">
+                                    <a href="https://github.com/Sumner-David/FancyLogin"><img src="./images/contact-images/gitHub-white.svg"
+                                            alt="Github Icon"></a>
+
+                                    <a href="./projects/FancyLogin/index.html"><img src="./images/link-icon.svg" alt="Link Icon"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Simon Says</h3>
+                    <div class="project-image simon-says">
+                        <div class="card-overlay">
+                            <div class="overlay-text">
+
+                                <h4>Simon Says Game</h4>
+
+                                <p>
+                                    Game created with logic purely done with <span>JavaScript</span> via the <span>JQuery</span> library
+                                </p>
+
+                                <div class="project-icons">
+                                    <a href="https://github.com/Sumner-David/Simon-Says"><img src="./images/contact-images/gitHub-white.svg"
+                                            alt="Github Icon"></a>
+
+                                    <a href="./projects/Simon-Game/index.html"><img src="./images/link-icon.svg" alt="Link Icon"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio V1</h3>
+                    <div class="project-image portfolio-v1">
+                        <div class="card-overlay">
+                            <div class="overlay-text">
+
+                                <h4>Portfolio V1</h4>
+
+                                <p>
+                                    Rough draft of original design. Heavy use of <span>JS</span> and <span>GSAP animations</span>
+                                </p>
+
+                                <div class="project-icons">
+                                    <a href="https://github.com/Sumner-David/Portfolio-Site"><img src="./images/contact-images/gitHub-white.svg"
+                                            alt="Github Icon"></a>
+
+                                    <a href="./projects/PortfolioSite/src/index.html"><img src="./images/link-icon.svg" alt="Link Icon"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Home Furniture</h3>
+                    <div class="project-image fullpage-js">
+                        <div class="card-overlay">
+                            <div class="overlay-text">
+
+                                <h4>Home Furniture</h4>
+
+                                <p>
+                                    Playing with the capabilities of the <span>FullPage JS library</span>
+                                </p>
+
+                                <div class="project-icons">
+                                    <a href="https://github.com/Sumner-David/FullpageJsFurniture"><img src="./images/contact-images/gitHub-white.svg"
+                                            alt="Github Icon"></a>
+
+                                    <a href="./projects/FullPageFurniture/index.html"><img src="./images/link-icon.svg" alt="Link Icon"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- End of Protfolio Projects -->
 
 
     <!-- Contact -->
+
+    <div class="contact">
+        <div class="max-width-limit">
+            <h3>Feel free to contact me</h3>
+
+            <div class="contact-list">
+                <div class="contact-image">
+                    <img src="./images/contact-images/gitHub-white.svg" alt="Github Logo">
+                </div>
+                <div class="contact-image">
+                    <img src="./images/contact-images/email.svg" alt="Github Logo">
+                </div>
+                <div class="contact-image">
+                    <img src="./images/contact-images/linkedin.svg" alt="Github Logo">
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
 
     <!-- End of Contact -->
 
@@ -119,21 +293,25 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-menu">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
+        <div class="max-width-limit">
+            <div class="footer-menu">
+                <ul class="footer-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
-            <p class="copyright">
-                <p>Developerd by David Sumner</p>
-            </p>
+                <p class="copyright">
+                    Developed by David Sumner &copy; 2020
+                </p>
+            </div>
         </div>
     </footer>
 
+
     <script src="./js/app.js"></script>
+    <script src="./js/mix-it-up/dist/mixitup.min.js"></script>
 </body>
 </html>

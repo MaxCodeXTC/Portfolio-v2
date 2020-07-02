@@ -1,0 +1,133 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.background-image {
+    height:100vh;
+    background: url(lake.jpg);
+    background-size:cover;
+    background-position: center;
+    transition:all 0.3s ease-in-out;
+}
+
+
+.form-container {
+    border-radius:18px;
+    background-color:rgba(0,0,0,0.8);
+    width:400px;
+    padding:40px 40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 2px 7px 10px 3px rgb(0,0,0,0.7) ;
+
+}
+
+.form-container h2 {
+    text-align:center;
+    color:#ffffff;
+    font-weight:400;
+    letter-spacing:1px;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.inputBox {
+position:relative;
+}
+
+.inputBox label {
+    display:block;
+    font-size:18px;
+    position:absolute;
+    top:25px;
+    z-index:0;
+    color:#fff;
+    pointer-events:none;
+    transition:all 0.3s ease-out;
+
+}
+
+.labelActive {
+    top:4px!important;
+    font-size:14px!important;
+    color: #03a9f4!important;
+    transition:all 0.3s ease-out!important;
+
+}
+
+.inputBox input {
+    width:100%;
+    background:none;
+    outline:none;
+    border:none;
+    border-bottom:1.5px #03a9f4 solid;
+    margin-bottom:20px;
+    font-size:18px;
+    color:#ffffff;
+    margin-top:25px;
+    z-index:5
+}
+
+.inputBox input::placeholder {
+    color:#ffffff;
+    font-size:18px;
+
+}
+
+.submitBox button {
+    margin-top:5px;
+    width:80px;
+    height:35px;
+    background-color:#03a9f4;
+    outline:none;
+    border-radius:5px;
+    border:none;
+    font-size:14px;
+    color:#ffffff;
+    letter-spacing:1px;
+}
+
+@media only screen and (max-width:420px) {
+
+    .background-image {
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0%;
+        left:0%;
+        transition:all 0.3s ease-in-out;
+    }
+    .form-container {
+        width:100%;
+        
+        border-radius:0;
+        height:100%;
+        padding:40px 20px;
+    }
+
+
+    .inputBox {
+        text-align:center;
+    }
+    .inputBox input {
+        width:90%;
+    }
+
+    .inputBox label {
+        left:15px;
+    }
+    
+    .submitBox {
+        text-align:center;
+    }
+    
+}
+
+
+
+
