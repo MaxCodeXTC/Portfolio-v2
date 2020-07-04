@@ -9,3 +9,51 @@
     background: rgba(0, 0, 0, 0.5);
 }
 }
+
+@keyframes button-glow {
+    0% {
+        box-shadow : 
+        0 0 0px rgba(252, 106, 73, 0.8),0 0 5px rgba(252, 106, 73, 0.7),0 0 10px rgba(252, 106, 73, 0.6);
+        
+    }
+
+
+    100% {
+        box-shadow:
+        0 0 15px rgba(252, 106, 73, 0.8),
+        0 0 25px rgba(252, 106, 73, 0.7),
+        0 0 35px rgba(252, 106, 73, 0.6);
+    }
+
+    
+}
+
+@keyframes blinking {
+    0% {
+        opacity:0;
+    }
+
+    50% {
+        opacity:1
+    }
+
+    100%{
+        opacity:0;
+    }
+
+
+}
+
+@keyframes projectClickable {
+    0% {
+        pointer-events:none
+    }
+    50%{
+        pointer-events:none;
+
+    }
+
+    100%{
+        pointer-events:auto;
+    }
+}

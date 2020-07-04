@@ -1,0 +1,58 @@
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(50, 50, 50);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient($vermillion,orange,$vermillion);
+    border-radius:10px;
+}
+
+
+
+
+//Uncomment this to bring back the glowy scrolling
+// ::-webkit-scrollbar{
+//     width:0
+// }
+
+
+
+// #progressbar {
+//     position:fixed;
+//     top:0;
+//     right: 0;
+//     width:10px;
+//     height:10vh;
+//     background: linear-gradient(to top, $vermillion,orange);
+//     animation: animate 2s ease-in-out infinite alternate;
+//     border-radius:10px;
+    
+// };
+
+// @keyframes animate {
+//     0% {
+//         filter:saturate(1) hue-rotate(0deg)
+//     }
+    
+
+//     100% {
+//         filter:saturate(2) hue-rotate(30deg)
+//     }
+// }
+
+
+// // Glowy bit
+// #progressbar::after {
+//     content: '';
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     width:100%;
+//     opacity:0.6;
+//     height:100%;
+//     background:linear-gradient(to top, $vermillion, orange);
+//     filter:blur(10px);
+// }

@@ -1,0 +1,25 @@
+
+
+
+
+@media only screen and (max-width: 375px) {
+    .projects {
+        .project-card {
+            .project-image {
+                .card-overlay {
+                    .overlay-text {
+
+                        h4 {
+                            display:none;
+                        }
+
+                        p {
+                            font-size: 70%;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
