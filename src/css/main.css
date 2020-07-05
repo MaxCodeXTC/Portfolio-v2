@@ -600,6 +600,10 @@ footer {
   cursor: pointer;
 }
 
+.footer-list li {
+  cursor: pointer;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
   background: #323232;

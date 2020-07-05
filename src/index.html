@@ -11,21 +11,21 @@
 </head>
 <body>
     
-    <header>
+    <header role="header">
         <nav class="nav-menu max-width-limit">
             <a href="#"><img class="header-logo" src="images/logo.png" alt="DS Logo"></a>
 
-            <ul class="nav-list">
+            <ul class="nav-list" role="menu">
                 <div class="marker"></div>
-                <li class="nav-item nav-button"><a>Home</a></li>
-                <li class="nav-item nav-button"><a>Skills</a></li>
-                <li class="nav-item nav-button"><a>About</a></li>
-                <li class="nav-item nav-button"><a>Projects</a></li>
-                <li class="nav-item nav-button"><a>Contact</a></li>
+                <li class="nav-item nav-button" role="menu-item"><a>Home</a></li>
+                <li class="nav-item nav-button" role="menu-item"><a>Skills</a></li>
+                <li class="nav-item nav-button" role="menu-item"><a>About</a></li>
+                <li class="nav-item nav-button" role="menu-item"><a>Projects</a></li>
+                <li class="nav-item nav-button" role="menu-item"><a>Contact</a></li>
                 
             </ul>
 
-            <div class="burger">
+            <div class="burger" role="button">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -36,7 +36,7 @@
 
     </header>
 
-    <div class="slider">
+    <div class="slider" aria-hidden="true">
         <ul class="slider-menu">
             <li class="slider-item nav-button"><a>Home</a></li>
             <li class="slider-item nav-button"><a>Skills</a></li>
@@ -52,7 +52,7 @@
         </div>
 
 
-        <div class="hero-content">
+        <div class="hero-content" role="hero">
 
             <!-- Top level -->
             <div class="hero-text">
@@ -69,7 +69,7 @@
 
 
     <!-- Skills Section -->
-    <div class="skills" id="skills">
+    <div class="skills" id="skills" role="skills content">
         <div class="max-width-limit">
             <h2 class="skills-title">Skills</h2>
 
@@ -86,11 +86,8 @@
                 <img src="images/tech-logos/gulp.svg" alt="Gulp">
                 <img src="images/tech-logos/git.png" alt="Git">
                 <img src="images/tech-logos/node-white.svg" alt="NodeJs">
-                <img src="images/tech-logos/expressjs.svg" alt="Express">
+                <img src="images/tech-logos/expresssvg-logo-white.svg" alt="Express">
                 <img src="images/tech-logos/mysql.svg" alt="Mysql">
-            
-
-                
             </div>
         </div>
     </div>
@@ -98,7 +95,7 @@
 
 
     <!-- About Section  -->
-    <div class="about" id="about">
+    <div class="about" id="about" role="about content">
         <div class="max-width-limit">
             <div class="about-container">
                 <div class="about-content">
@@ -113,7 +110,7 @@
                         one, and i'm still planning on learning more!
                     </p>
 
-                    <a class="cv-button" href="./Resume-2020.pdf">
+                    <a class="cv-button" role="button" href="./Resume-2020.pdf">
                         <span> </span>
                         <span> </span>
                         <span> </span>
@@ -138,7 +135,7 @@
 
     <!-- Portfolio section -->
 
-    <div class="portfolio" id="projects">
+    <div class="portfolio" id="projects" role="project content">
         <div class="max-width-limit">
 
             <h2 class="project-heading">A Few Personal Projects</h2>
@@ -298,23 +295,23 @@
 
     <!-- Contact -->
 
-    <div class="contact" id="contact">
+    <div class="contact" id="contact" role="contact-forms">
         <div class="max-width-limit">
-            <h3>Feel free to contact me</h3>
+            <h3>Feel free to contact&nbsp;me</h3>
 
             <div class="contact-list">
-                <div class="contact-image">
+                <div class="contact-image" role="button">
                     <a href="https://github.com/Sumner-David">
                         <img src="./images/contact-images/gitHub-white.svg" alt="Github Logo">
                     </a>
                         
                 </div>
-                <div class="contact-image">
+                <div class="contact-image" role="button">
                     <a href="mailto:davidphilipsumner@gmail.com">
                         <img src="./images/contact-images/email.svg" alt="Email">
                     </a>
                 </div>
-                <div class="contact-image">
+                <div class="contact-image" role="button">
                     <a href="https://www.linkedin.com/in/david-sumner-30a004176/">
                         <img src="./images/contact-images/linkedin.svg" alt="Linkedin">
                     </a>
@@ -337,12 +334,12 @@
     <footer>
         <div class="max-width-limit">
             <div class="footer-menu">
-                <ul class="footer-list">
-                    <li class="nav-button"><a>Home</a></li>
-                    <li class="nav-button"><a>Skills</a></li>
-                    <li class="nav-button"><a>About</a></li>
-                    <li class="nav-button"><a>Projects</a></li>
-                    <li class="nav-button"><a>Contact</a></li>
+                <ul class="footer-list" role="menu">
+                    <li class="nav-button" role="menuitem"><a>Home</a></li>
+                    <li class="nav-button" role="menuitem"><a>Skills</a></li>
+                    <li class="nav-button" role="menuitem"><a>About</a></li>
+                    <li class="nav-button" role="menuitem"><a>Projects</a></li>
+                    <li class="nav-button" role="menuitem"><a>Contact</a></li>
                 </ul>
 
                 <p class="copyright">
