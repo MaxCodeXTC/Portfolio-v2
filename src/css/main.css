@@ -499,6 +499,11 @@ header::after {
   background-size: cover;
   background-position: center;
 }
+.project-card .nature-tours {
+  background: url("../images/project-images/nature-tours.png");
+  background-size: cover;
+  background-position: center;
+}
 
 footer {
   background-color: #000000;
