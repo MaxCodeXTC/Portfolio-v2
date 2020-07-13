@@ -8,7 +8,27 @@ let homeButton = navItems[0];
 
 //** Specific CSS to handle Safari rejecting styles **/
 if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-    document.querySelector('.project-icons a')
+    // Convert all project cards from nodeLists to Array to change the styling
+    let projectCardList = document.querySelectorAll('.card-overlay');
+    let projectCardListArray = Array.from(projectCardList);
+
+    projectCardListArray.forEach(function(card) {
+        card.addEventListener('mouseenter', function(event){
+            let selectedCard = event.target;
+            
+        
+            selectedCard.querySelector('.project-icons').firstElementChild.style.pointerEvents = 'auto';
+            selectedCard.querySelector('.project-icons').lastElementChild.style.pointerEvents = 'auto';
+            
+        })
+
+        card.addEventListener('mouseleave', function (event) {
+            let selectedCard = event.target;
+            selectedCard.querySelector('.project-icons').firstElementChild.style.pointerEvents = 'none';
+            selectedCard.querySelector('.project-icons').lastElementChild.style.pointerEvents = 'none';
+        })
+    })
+    
 }
 
 
