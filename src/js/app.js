@@ -6,6 +6,13 @@ let homeButton = navItems[0];
 
 
 
+//** Specific CSS to handle Safari rejecting styles **/
+if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+    document.querySelector('.project-icons a')
+}
+
+
+
 //***Handles Menu Movement bar
 // const navMenuMovement = function(NavItems){
 //     navItems.forEach(function (item) {
