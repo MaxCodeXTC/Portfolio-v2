@@ -437,6 +437,7 @@ header::after {
   font-size: 120%;
   margin-bottom: 0.5em;
   pointer-events: none;
+  line-height: 110%;
 }
 .project-card .project-image .card-overlay .overlay-text p {
   pointer-events: none;
